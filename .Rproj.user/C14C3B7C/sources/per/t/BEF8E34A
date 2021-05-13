@@ -1,0 +1,32 @@
+{
+    "id": "BEF8E34A",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1618166969953.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "expression": "pop_table",
+        "caption": "pop_table",
+        "totalObservations": "20",
+        "displayedObservations": "20",
+        "variables": "4",
+        "cacheKey": "A7BD92B0",
+        "object": "pop_table",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=pop_table&cache_key=A7BD92B0&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 140561168273752,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1618166969953,
+    "read_only": false,
+    "read_only_alternatives": []
+}
