@@ -7,6 +7,8 @@ output: html_document
 
 ## Load libraries
 
+The rvest package is used for the actual web-scraping, and the tidyverse allows us to manipulate/clean the scraped table. 
+
 ```{r}
 library(tidyverse)
 library(rvest)
@@ -15,6 +17,9 @@ library(rvest)
 ## Extracting the table
 
 ```{r}
+
+## Read and identify table objects from the webpage of interest:
+
 url = "https://en.wikipedia.org/wiki/Houston"
 houston_html = read_html(url)
 houston_html
@@ -22,11 +27,15 @@ houston_html
 houston_html %>% 
   html_nodes(css = "table")
 
+## Pull out the table we're interested in:
+
 pop_table = 
   houston_html %>% 
   html_nodes(css = "table") %>% 
   nth(4) %>% 
   html_table(fill = TRUE) 
+
+## Clean the table:
 
 colnames(pop_table) = c("year", "population", "blank", "percent_change")
 
